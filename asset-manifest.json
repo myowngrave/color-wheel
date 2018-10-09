@@ -1,0 +1,14 @@
+{
+  "main.css": "/color-wheel/static/css/main.cf9a0fc2.chunk.css",
+  "main.js": "/color-wheel/static/js/main.df9256e1.chunk.js",
+  "main.js.map": "/color-wheel/static/js/main.df9256e1.chunk.js.map",
+  "static/js/1.6105a37c.chunk.js": "/color-wheel/static/js/1.6105a37c.chunk.js",
+  "static/js/1.6105a37c.chunk.js.map": "/color-wheel/static/js/1.6105a37c.chunk.js.map",
+  "runtime~main.js": "/color-wheel/static/js/runtime~main.fb7e5070.js",
+  "runtime~main.js.map": "/color-wheel/static/js/runtime~main.fb7e5070.js.map",
+  "static/media/logo.svg": "/color-wheel/static/media/logo.5d5d9eef.svg",
+  "static/css/main.cf9a0fc2.chunk.css.map": "/color-wheel/static/css/main.cf9a0fc2.chunk.css.map",
+  "index.html": "/color-wheel/index.html",
+  "precache-manifest.d4a9afc0de0f94300620f0dad96be176.js": "/color-wheel/precache-manifest.d4a9afc0de0f94300620f0dad96be176.js",
+  "service-worker.js": "/color-wheel/service-worker.js"
+}
