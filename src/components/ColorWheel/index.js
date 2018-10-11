@@ -14,7 +14,7 @@ const calculateCanvasSize = () => {
             size: width - 40
         } : {
             ratio,
-            size: width * 0.1
+            size: width * 0.3
         };
     },
     xy2polar = (x, y) => {
@@ -22,7 +22,7 @@ const calculateCanvasSize = () => {
         let phi = Math.atan2(y, x);
         return [r, phi];
     },
-    polay2xy = (r, phi) => ({
+    polar2xy = (r, phi) => ({
         x: r * Math.cos(phi),
         y: r * Math.sin(phi)
     }),
@@ -64,15 +64,17 @@ class ColorWheel extends Component {
     static propTypes = {
         size: PropTypes.number,
         ratio: PropTypes.number,
-        thickness: PropTypes.number
+        thickness: PropTypes.number,
+        numberOfThumbs: PropTypes.number,
     };
     static defaultProps = {
-        thickness: 0
+        thickness: 0,
+        numberOfThumbs: 1,
     };
     state = {
         initialized: false,
         canvasCenter: {x: 0, y: 0},
-        thumbPosition: {x: 0, y: 0}
+        thumbPosition: [],
     }
     ctx = null;
 
@@ -91,15 +93,25 @@ class ColorWheel extends Component {
 
     onMouseMove({clientX, clientY}) {
         if (!this.state.initialized) return;
-        const {size} = this.props,
+        const {size, numberOfThumbs} = this.props,
             {canvasCenter} = this.state,
             radius = size * 1.0 / 2;
-        const vectorX = clientX - canvasCenter.x,
+        let vectorX = clientX - canvasCenter.x,
             vectorY = clientY - canvasCenter.y,
             [_, phi] = xy2polar(vectorX, vectorY),
-            thumbPosition = polay2xy(radius, phi);
-        thumbPosition.x += radius;
-        thumbPosition.y += radius;
+            thumbPosition = [],
+            //     thumbPosition = polar2xy(radius, phi);
+            // thumbPosition.x += radius;
+            // thumbPosition.y += radius;
+            increment = 2 * Math.PI / numberOfThumbs;
+        for (let i = 0; i < numberOfThumbs; i++) {
+            const thumb = polar2xy(radius, phi);
+            thumb.x += radius;
+            thumb.y += radius;
+            thumbPosition.push(thumb);
+
+            phi += increment;
+        }
 
         this.setState({
             thumbPosition
@@ -162,13 +174,16 @@ class ColorWheel extends Component {
     render() {
         const size = this.props.size,
             {thumbPosition} = this.state,
-            thumbStyle = {
-                top: thumbPosition.y + 'px',
-                left: thumbPosition.x + 'px',
+            renderThumb = thumbPos => {
+                const thumbStyle = {
+                    top: thumbPos.y + 'px',
+                    left: thumbPos.x + 'px'
+                };
+                return <div className={styles.thumb} style={thumbStyle}/>
             };
         return <div className={styles.container}>
             <canvas ref={this.initCanvas} width={size} height={size}/>
-            {this.state.initialized && <div className={styles.thumb} style={thumbStyle}/>}
+            {this.state.initialized && thumbPosition.map(renderThumb)}
         </div>;
     }
 }
