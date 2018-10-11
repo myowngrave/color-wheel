@@ -1,3 +1,5 @@
+$size: 26px;
+
 .container {
   display: inline-block;
   position: relative;
@@ -6,8 +8,8 @@
 .thumb {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+  width: $size;
+  height: $size;
   background: white;
   border: 2px solid black;
   border-radius: 50%;

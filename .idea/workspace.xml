@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5c54f57-df23-4cef-b2dc-8d2ef7fa2619" name="Default Changelist" comment="fuck you bitch">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/PhongTH.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ColorWheel/stories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myowngrave.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myowngrave.github.io.iml" afterDir="false" />
+    <list default="true" id="d5c54f57-df23-4cef-b2dc-8d2ef7fa2619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ColorWheel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorWheel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,7 +22,8 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.90" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,8 +32,10 @@
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="5" />
+          <entry key="js" value="7" />
           <entry key="json" value="4" />
+          <entry key="scss" value="1" />
+          <entry key="ts" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -47,139 +43,75 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SCSS" value="1" />
+          <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="9" />
+          <entry key="js" value="1196" />
           <entry key="json" value="85" />
-          <entry key="txt" value="34" />
+          <entry key="scss" value="25" />
+          <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="85" />
-          <entry key="JavaScript" value="9" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="JavaScript" value="1196" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="SCSS" value="25" />
         </counts>
       </usages-collector>
     </session>
     <session id="-870971774">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="23" />
-          <entry key="scss" value="1" />
-          <entry key="ts" value="5" />
+          <entry key="js" value="12" />
+          <entry key="ts" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="3789" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="SCSS" value="131" />
+          <entry key="JSON" value="19" />
+          <entry key="JavaScript" value="2342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3789" />
-          <entry key="json" value="21" />
-          <entry key="scss" value="131" />
-          <entry key="txt" value="14" />
+          <entry key="js" value="2342" />
+          <entry key="json" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JavaScript" value="23" />
-          <entry key="SCSS" value="1" />
-          <entry key="TypeScript" value="5" />
+          <entry key="JavaScript" value="12" />
+          <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
-              <folding>
-                <element signature="n#!!block;n#jest#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="276">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#1123#1200#0" />
-                <element signature="e#1318#1377#0" />
-                <element signature="e#1673#1748#0" />
-                <element signature="e#2048#2079#0" />
-                <element signature="e#2217#2291#0" />
-                <element signature="e#2565#3713#0" />
-                <element signature="e#2585#3529#0" />
-                <element signature="e#2591#2767#0" />
-                <element signature="e#2773#2852#0" />
-                <element signature="e#2858#3524#0" />
-                <element signature="e#2866#2924#0" />
-                <element signature="e#3085#3517#0" />
-                <element signature="e#3095#3140#0" />
-                <element signature="e#3258#3469#0" />
-                <element signature="e#3345#3457#0" />
-                <element signature="e#3373#3422#0" />
-                <element signature="e#3551#3693#0" />
-                <element signature="e#3570#3687#0" />
-                <element signature="e#3632#3680#0" />
-                <element signature="e#3716#3756#0" />
               </folding>
             </state>
           </provider>
@@ -188,46 +120,51 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="92">
+              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#446#542#0" />
-                <element signature="e#719#735#0" />
-                <element signature="e#648#1440#0" />
-                <element signature="e#1703#1725#0" />
-                <element signature="e#1846#3147#0" />
-                <element signature="e#2127#2818#0" />
-                <element signature="e#3049#3076#0" />
+                <element signature="e#203#219#0" />
+                <element signature="e#297#507#0" />
+                <element signature="e#412#455#0" />
+                <element signature="e#458#502#0" />
+                <element signature="e#532#628#0" />
+                <element signature="e#656#712#0" />
+                <element signature="e#819#1611#0" />
+                <element signature="e#992#1038#0" />
+                <element signature="e#1072#1118#0" />
+                <element signature="e#1152#1198#0" />
+                <element signature="e#1232#1278#0" />
+                <element signature="e#1312#1358#0" />
+                <element signature="e#1392#1438#0" />
+                <element signature="e#1644#1694#0" />
+                <element signature="e#1655#1691#0" />
+                <element signature="n#!!block;n#constructor#0;n#ColorWheel#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#ColorWheel#0" />
+                <element signature="n#!!block;n#componentWillUnmount#0;n#ColorWheel#0" />
+                <element signature="e#2749#2794#0" />
+                <element signature="e#3198#3531#0" />
+                <element signature="e#3382#3453#0" />
+                <element signature="e#4751#4778#0" />
+                <element signature="n#!!block;n#render#0;n#ColorWheel#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-              <folding>
-                <element signature="e#3154#4228#0" />
-                <element signature="e#4240#5020#0" />
-                <element signature="e#5038#5484#0" />
-                <element signature="e#5497#7339#0" />
-                <element signature="e#7358#7554#0" />
-                <element signature="e#7835#8220#0" />
-                <element signature="e#9065#10101#0" />
-                <element signature="e#10254#11182#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="253">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -237,19 +174,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>appBuild</find>
-      <find>index.css</find>
+      <find>drawImage</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/config</dir>
-      <dir>C:\Users\phongth\WebstormProjects\color-wheel\src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -264,23 +200,16 @@
         <option value="$PROJECT_DIR$/src/store/reducers/appState.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/ColorWheel/idnex.js" />
-        <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/ColorWheel/index.js" />
-        <option value="$PROJECT_DIR$/src/components/ColorWheel/stories.js" />
-        <option value="$PROJECT_DIR$/.storybook/config.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss" />
       </list>
     </option>
-  </component>
-  <component name="JsBowerSettings">
-    <node-interpreter value="project" />
-    <bower-package value="" />
-    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -323,8 +252,31 @@
         <subPane>
           <expand>
             <path>
-              <item name="color-wheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color-wheel" type="462c0819:PsiDirectoryNode" />
+              <item name="myowngrave.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myowngrave.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myowngrave.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myowngrave.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myowngrave.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myowngrave.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myowngrave.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myowngrave.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myowngrave.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myowngrave.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +286,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="8.11.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -345,8 +296,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -368,7 +318,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/myowngrave.github.io.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/App.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ColorWheel/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/index.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/yarn.lock</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -377,6 +332,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dictionaries/PhongTH.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/jsLibraryMappings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.storybook/config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ColorWheel/stories.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -384,6 +344,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/index.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -508,28 +469,16 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="storybook" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="npm.build" />
       <item itemvalue="npm.deploy" />
       <item itemvalue="npm.start" />
-      <item itemvalue="npm.storybook" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.storybook" />
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -544,9 +493,8 @@
       <option name="presentableId" value="Default" />
       <updated>1539107908608</updated>
       <workItem from="1539107914036" duration="2408000" />
-      <workItem from="1539144739086" duration="11519000" />
-      <workItem from="1539235251758" duration="628000" />
-      <workItem from="1539242151041" duration="7878000" />
+      <workItem from="1539144739086" duration="10784000" />
+      <workItem from="1539266667123" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1539108161649</created>
@@ -569,18 +517,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539108753769</updated>
     </task>
-    <task id="LOCAL-00004" summary="fuck you bitch">
-      <created>1539162859382</created>
+    <task id="LOCAL-00004" summary="fix">
+      <created>1539197177004</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1539162859382</updated>
+      <updated>1539197177004</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22433000" />
+    <option name="totallyTimeSpent" value="22960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,24 +540,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="55" y="25" width="1865" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71632653" visible="true" weight="0.24968314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7181529" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.28367347" side_tool="true" visible="true" weight="0.24968314" />
+      <window_info id="npm" order="2" sideWeight="0.28184712" side_tool="true" visible="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49619773" visible="true" weight="0.32692307" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32690248" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49936628" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5038023" side_tool="true" visible="true" weight="0.32692307" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49809885" weight="0.16620879" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.16620879" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -617,32 +565,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -652,8 +574,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="first commit" />
     <MESSAGE value="init create-react-app" />
-    <MESSAGE value="fuck you bitch" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuck you bitch" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -693,18 +615,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/build/static/js/runtime~main.fb7e5070.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="168">
+          <caret column="1267" selection-start-column="1267" selection-end-column="1267" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.5c880889.chunk.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.5c880889.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/1.74bb3b58.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="119" column="7" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#jest#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/1.74bb3b58.chunk.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -714,171 +649,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="194">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#1123#1200#0" />
-            <element signature="e#1318#1377#0" />
-            <element signature="e#1673#1748#0" />
-            <element signature="e#2048#2079#0" />
-            <element signature="e#2217#2291#0" />
-            <element signature="e#2565#3713#0" />
-            <element signature="e#2585#3529#0" />
-            <element signature="e#2591#2767#0" />
-            <element signature="e#2773#2852#0" />
-            <element signature="e#2858#3524#0" />
-            <element signature="e#2866#2924#0" />
-            <element signature="e#3085#3517#0" />
-            <element signature="e#3095#3140#0" />
-            <element signature="e#3258#3469#0" />
-            <element signature="e#3345#3457#0" />
-            <element signature="e#3373#3422#0" />
-            <element signature="e#3551#3693#0" />
-            <element signature="e#3570#3687#0" />
-            <element signature="e#3632#3680#0" />
-            <element signature="e#3716#3756#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <element signature="e#3154#4228#0" />
-            <element signature="e#4240#5020#0" />
-            <element signature="e#5038#5484#0" />
-            <element signature="e#5497#7339#0" />
-            <element signature="e#7358#7554#0" />
-            <element signature="e#7835#8220#0" />
-            <element signature="e#9065#10101#0" />
-            <element signature="e#10254#11182#0" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.5259bf9c.chunk.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="3257" column="4" selection-start-line="3257" selection-start-column="4" selection-end-line="3257" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="276">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react/umd/react.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="498" selection-start-line="498" selection-end-line="498" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react/cjs/react.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1657" column="11" lean-forward="true" selection-start-line="1657" selection-start-column="11" selection-end-line="1657" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="284" column="10" selection-start-line="284" selection-start-column="10" selection-end-line="284" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/1.46443335.chunk.js">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.fd6d6ef5.chunk.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret column="1478" lean-forward="true" selection-start-column="1478" selection-end-column="1478" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="16985" column="12" selection-start-line="16985" selection-start-column="12" selection-end-line="16985" selection-end-column="12" />
+        <state relative-caret-position="92">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <element signature="e#203#219#0" />
+            <element signature="e#297#507#0" />
+            <element signature="e#412#455#0" />
+            <element signature="e#458#502#0" />
+            <element signature="e#532#628#0" />
+            <element signature="e#656#712#0" />
+            <element signature="e#819#1611#0" />
+            <element signature="e#992#1038#0" />
+            <element signature="e#1072#1118#0" />
+            <element signature="e#1152#1198#0" />
+            <element signature="e#1232#1278#0" />
+            <element signature="e#1312#1358#0" />
+            <element signature="e#1392#1438#0" />
+            <element signature="e#1644#1694#0" />
+            <element signature="e#1655#1691#0" />
+            <element signature="n#!!block;n#constructor#0;n#ColorWheel#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#ColorWheel#0" />
+            <element signature="n#!!block;n#componentWillUnmount#0;n#ColorWheel#0" />
+            <element signature="e#2749#2794#0" />
+            <element signature="e#3198#3531#0" />
+            <element signature="e#3382#3453#0" />
+            <element signature="e#4751#4778#0" />
+            <element signature="n#!!block;n#render#0;n#ColorWheel#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/styles.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/1.4622e304.chunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.57434ffc.chunk.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/runtime~main.fb7e5070.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret column="1430" lean-forward="true" selection-start-column="1430" selection-end-column="1430" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#446#542#0" />
-            <element signature="e#719#735#0" />
-            <element signature="e#648#1440#0" />
-            <element signature="e#1703#1725#0" />
-            <element signature="e#1846#3147#0" />
-            <element signature="e#2127#2818#0" />
-            <element signature="e#3049#3076#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.storybook/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorWheel/stories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!block;n#jest#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
