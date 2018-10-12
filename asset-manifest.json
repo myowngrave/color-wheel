@@ -1,13 +1,13 @@
 {
-  "main.css": "/color-wheel/static/css/main.8e3ee868.chunk.css",
-  "main.js": "/color-wheel/static/js/main.57434ffc.chunk.js",
-  "main.js.map": "/color-wheel/static/js/main.57434ffc.chunk.js.map",
-  "static/js/1.4622e304.chunk.js": "/color-wheel/static/js/1.4622e304.chunk.js",
-  "static/js/1.4622e304.chunk.js.map": "/color-wheel/static/js/1.4622e304.chunk.js.map",
+  "main.css": "/color-wheel/static/css/main.ff67fbf7.chunk.css",
+  "main.js": "/color-wheel/static/js/main.c2b9f0ec.chunk.js",
+  "main.js.map": "/color-wheel/static/js/main.c2b9f0ec.chunk.js.map",
+  "static/js/1.3b7b784d.chunk.js": "/color-wheel/static/js/1.3b7b784d.chunk.js",
+  "static/js/1.3b7b784d.chunk.js.map": "/color-wheel/static/js/1.3b7b784d.chunk.js.map",
   "runtime~main.js": "/color-wheel/static/js/runtime~main.fb7e5070.js",
   "runtime~main.js.map": "/color-wheel/static/js/runtime~main.fb7e5070.js.map",
-  "static/css/main.8e3ee868.chunk.css.map": "/color-wheel/static/css/main.8e3ee868.chunk.css.map",
+  "static/css/main.ff67fbf7.chunk.css.map": "/color-wheel/static/css/main.ff67fbf7.chunk.css.map",
   "index.html": "/color-wheel/index.html",
-  "precache-manifest.da9188ee4e9a7f70a15451cfde5d4252.js": "/color-wheel/precache-manifest.da9188ee4e9a7f70a15451cfde5d4252.js",
+  "precache-manifest.3e09c09e5cd9260cee3f56218fa415e3.js": "/color-wheel/precache-manifest.3e09c09e5cd9260cee3f56218fa415e3.js",
   "service-worker.js": "/color-wheel/service-worker.js"
 }
