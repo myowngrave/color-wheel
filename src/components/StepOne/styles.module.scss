@@ -1,0 +1,31 @@
+$earsOverflowSize: 50px;
+$earsSize: calc(100% + #{$earsOverflowSize});
+
+.ear {
+  position: absolute;
+  width: $earsSize;
+  height: $earsSize;
+  top: 0;
+  left: 0;
+  margin-left: -$earsOverflowSize/2;
+  margin-top: -$earsOverflowSize/2;
+  border-radius: 50%;
+  opacity: .17;
+  z-index: -1;
+}
+
+.started {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  z-index: -1;
+
+  background: white;
+
+  +p{
+    position: absolute;
+  }
+}

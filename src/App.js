@@ -1,16 +1,11 @@
 import React, {Component} from 'react';
-import ColorWheel from "./components/ColorWheel";
+import StepOne from "./components/StepOne";
 
 class App extends Component {
-  state = {
-    colors: []
-  };
-
   render() {
-    const onColorsChanged = colors => this.setState({colors});
     return (
-      <div className="App">
-        <ColorWheel thickness={40} numberOfThumbs={3} onColorsChanged={onColorsChanged}/>
+      <div className="App" style={{padding: '60px'}}>
+        <StepOne/>
       </div>
     );
   }

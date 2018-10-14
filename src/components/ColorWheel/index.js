@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {withProps} from 'recompose';
 import {isMobile} from 'react-device-detect';
 import styles from './styles.module.scss';
+import {polar2xy} from "../../helpers";
 
 //region Helpers
 const EventListenerMode = {capture: true};
@@ -22,10 +23,6 @@ const calculateCanvasSize = () => {
     let phi = Math.atan2(y, x);
     return [r, phi];
   },
-  polar2xy = (r, phi) => ({
-    x: r * Math.cos(phi),
-    y: r * Math.sin(phi)
-  }),
   rad2deg = rad => ((rad + Math.PI) / (2 * Math.PI)) * 360,
   hsl2rgb = (hue, saturation, lightness) => {
     let chroma = lightness * saturation;
@@ -51,6 +48,9 @@ const calculateCanvasSize = () => {
 
     // Change r,g,b values from [0,1] to [0,255]
     return [255 * r, 255 * g, 255 * b];
+  },
+  rgbToHex = (r, g, b) => {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
   };
 
 //endregion
@@ -67,12 +67,15 @@ class ColorWheel extends Component {
     thickness: PropTypes.number,
     numberOfThumbs: PropTypes.number,
     isConstraint: PropTypes.bool,
+    children: PropTypes.func,
     onColorsChanged: PropTypes.func,
   };
   static defaultProps = {
     thickness: 0,
     numberOfThumbs: 1,
     isConstraint: true,
+    children: () => {
+    },
     onColorsChanged: () => {
     }
   };
@@ -80,6 +83,7 @@ class ColorWheel extends Component {
     initialized: false,
     canvasCenter: {x: 0, y: 0},
     thumbPosition: [],
+    thumbColors: []
   };
   ctx = null;
   data = null;
@@ -123,6 +127,8 @@ class ColorWheel extends Component {
       const thumb = polar2xy(computedRadius, phi);
       thumb.x += radius;
       thumb.y += radius;
+      thumb.phi = phi;
+      thumb.deg = rad2deg(phi);
       thumbPosition.push(thumb);
 
       phi += increment;
@@ -134,11 +140,12 @@ class ColorWheel extends Component {
         const [x, y] = [thumb.x, thumb.y].map(Math.round),
           [r, g, b] = [0, 1, 2].map(i => data[(x + y * size) * 4 + i]);
 
-        return {r, g, b};
+        return {r, g, b, hex: rgbToHex(r, g, b)};
       });
 
     this.setState({
-      thumbPosition
+      thumbPosition,
+      thumbColors: thumbnailColors
     }, () => onColorsChanged(thumbnailColors));
   }
 
@@ -198,7 +205,7 @@ class ColorWheel extends Component {
 
   render() {
     const size = this.props.size,
-      {thumbPosition} = this.state,
+      {thumbPosition, thumbColors} = this.state,
       renderThumb = thumbPos => {
         const thumbStyle = {
           top: thumbPos.y + 'px',
@@ -209,6 +216,10 @@ class ColorWheel extends Component {
     return <div className={styles.container}>
       <canvas ref={this.initCanvas} width={size} height={size}/>
       {this.state.initialized && thumbPosition.map(renderThumb)}
+      {this.props.children({
+        thumbPosition,
+        thumbColors
+      })}
     </div>;
   }
 }

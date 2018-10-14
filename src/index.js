@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from "react-redux";
-import configStore from './store'
+import configStore from './store';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import './languages';
 
 ReactDOM.render(<Provider store={configStore()}><App/></Provider>, document.getElementById('root'));
 
