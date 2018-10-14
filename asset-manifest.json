@@ -1,13 +1,14 @@
 {
-  "main.css": "/color-wheel/static/css/main.674e4d3f.chunk.css",
-  "main.js": "/color-wheel/static/js/main.ec348ab3.chunk.js",
-  "main.js.map": "/color-wheel/static/js/main.ec348ab3.chunk.js.map",
-  "static/js/1.cd7345f7.chunk.js": "/color-wheel/static/js/1.cd7345f7.chunk.js",
-  "static/js/1.cd7345f7.chunk.js.map": "/color-wheel/static/js/1.cd7345f7.chunk.js.map",
+  "main.css": "/color-wheel/static/css/main.815da019.chunk.css",
+  "main.js": "/color-wheel/static/js/main.552d332f.chunk.js",
+  "main.js.map": "/color-wheel/static/js/main.552d332f.chunk.js.map",
+  "static/js/1.a1270db7.chunk.js": "/color-wheel/static/js/1.a1270db7.chunk.js",
+  "static/js/1.a1270db7.chunk.js.map": "/color-wheel/static/js/1.a1270db7.chunk.js.map",
   "runtime~main.js": "/color-wheel/static/js/runtime~main.fb7e5070.js",
   "runtime~main.js.map": "/color-wheel/static/js/runtime~main.fb7e5070.js.map",
-  "static/css/main.674e4d3f.chunk.css.map": "/color-wheel/static/css/main.674e4d3f.chunk.css.map",
+  "static/media/app.module.scss": "/color-wheel/static/media/Roboto-Bold.ee7b96fa.ttf",
+  "static/css/main.815da019.chunk.css.map": "/color-wheel/static/css/main.815da019.chunk.css.map",
   "index.html": "/color-wheel/index.html",
-  "precache-manifest.432901c3e90eb2ddf6e7b287046dcd5f.js": "/color-wheel/precache-manifest.432901c3e90eb2ddf6e7b287046dcd5f.js",
+  "precache-manifest.7c2c127303189ca54da11d299cdc77b6.js": "/color-wheel/precache-manifest.7c2c127303189ca54da11d299cdc77b6.js",
   "service-worker.js": "/color-wheel/service-worker.js"
 }
