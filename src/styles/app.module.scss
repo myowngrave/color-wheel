@@ -1,0 +1,8 @@
+@import "inc";
+
+@include embedFonts($fontName, ".ttf")
+
+body {
+  font-family: $fontName, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}

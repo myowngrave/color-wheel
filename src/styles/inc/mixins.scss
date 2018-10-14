@@ -1,0 +1,28 @@
+@import "~compass-mixins/lib/compass/css3";
+
+$fontmap: (
+        "Black": 900 normal,
+        "BlackItalic": 900 italic,
+        "Bold": 700 normal,
+        "BoldItalic": 700 italic,
+        //"Hairline": 100 normal,
+        //"HairlineItalic": 100 italic,
+        //"Heavy": 800 normal,
+        //"HeavyItalic": 800 italic,
+        "Italic": 400 italic,
+        "Regular": 400 normal,
+        "Light": 300 normal,
+        "LightItalic": 300 italic,
+        "Medium": 500 normal,
+        "MediumItalic": 500 italic,
+        //"Semibold": 600 normal,
+        //"SemiboldItalic": 600 italic,
+        "Thin": 200 normal,
+        "ThinItalic": 200 italic,
+);
+
+@mixin embedFonts($fontName, $ext, $fonts: $fontmap) {
+  @each $suffix, $prop in $fonts {
+    @include font-face($fontName, url("../fonts/#{$fontName}-#{$suffix}#{$ext}"), false, nth($prop, 1), nth($prop, 2));
+  }
+}

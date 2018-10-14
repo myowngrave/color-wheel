@@ -25,7 +25,10 @@ $earsSize: calc(100% + #{$earsOverflowSize});
 
   background: white;
 
-  +p{
+  +div{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

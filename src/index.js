@@ -6,6 +6,7 @@ import configStore from './store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import './styles/app.module.scss';
 import './languages';
 
 ReactDOM.render(<Provider store={configStore()}><App/></Provider>, document.getElementById('root'));

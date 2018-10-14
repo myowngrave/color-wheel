@@ -21,7 +21,7 @@ class StepOne extends Component {
         transform: `translate(${x}px, ${y}px)`
       };
       return <div className={styles.ear} style={earStyle}/>;
-    }), <div className={styles.started}/>, <p>{t('clickToGetStarted')}</p>];
+    }), <div className={styles.started}/>, <div><h1>{t('colorWheel')}</h1><p>{t('clickToGetStarted')}</p></div>];
   };
 
   render() {
