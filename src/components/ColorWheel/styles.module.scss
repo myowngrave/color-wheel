@@ -1,15 +1,31 @@
 $size: 26px;
 
-.container {
+%center {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  @extend %center;
   position: relative;
   canvas {
     display: block;
   }
 }
-
+.mainWheel {
+  position: relative;
+  width: auto;
+}
+.scopedContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  @extend %center;
+}
 .thumb {
   position: absolute;
   transform: translate(-50%, -50%);

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { withProps } from "recompose";
 import { isMobile } from "react-device-detect";
 import styles from "./styles.module.scss";
 import { polar2xy } from "../../helpers";
+import classnames from "classnames";
 
 //region Helpers
 const EventListenerMode = { capture: true };
@@ -69,6 +71,7 @@ class ColorWheel extends Component {
     thickness: PropTypes.number,
     numberOfThumbs: PropTypes.number,
     isConstraint: PropTypes.bool,
+    renderScoped: PropTypes.func,
     children: PropTypes.func,
     onColorsChanged: PropTypes.func
   };
@@ -76,6 +79,7 @@ class ColorWheel extends Component {
     thickness: 0,
     numberOfThumbs: 1,
     isConstraint: true,
+    renderScoped: () => {},
     children: () => {},
     onColorsChanged: () => {}
   };
@@ -83,7 +87,8 @@ class ColorWheel extends Component {
     initialized: false,
     canvasCenter: { x: 0, y: 0 },
     thumbPosition: [],
-    thumbColors: []
+    thumbColors: [],
+    scoped: null
   };
   ctx = null;
   data = null;
@@ -218,15 +223,26 @@ class ColorWheel extends Component {
           left: thumbPos.x + "px"
         };
         return <div className={styles.thumb} style={thumbStyle} />;
-      };
+      },
+      args = {
+        thumbPosition,
+        thumbColors
+      },
+      originalScoped = this.props.renderScoped(args),
+      scoped = React.cloneElement(originalScoped, {
+        className: classnames(
+          originalScoped.props.className,
+          styles.scopedContent
+        )
+      });
     return (
       <div className={styles.container}>
-        <canvas ref={this.initCanvas} width={size} height={size} />
-        {this.state.initialized && thumbPosition.map(renderThumb)}
-        {this.props.children({
-          thumbPosition,
-          thumbColors
-        })}
+        <div className={styles.mainWheel}>
+          <canvas ref={this.initCanvas} width={size} height={size} />
+          {this.state.initialized && thumbPosition.map(renderThumb)}
+          {scoped}
+        </div>
+        {this.props.children(args)}
       </div>
     );
   }
