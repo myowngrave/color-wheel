@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import {withI18n} from "react-i18next";
+import {withTranslation} from "react-i18next";
 import ColorWheel from "../ColorWheel";
 
 import styles from './styles.module.scss';
 import {polar2xy} from "../../helpers";
 
-@withI18n()
+@withTranslation()
 class StepOne extends Component {
   state = {
     colors: []

@@ -1,10 +1,10 @@
 import i18n from "i18next";
-import {reactI18nextModule} from "react-i18next";
+import {initReactI18next} from "react-i18next";
 import en from './en.json';
 import vi from './vi.json';
 import ru from './ru.json';
 
-i18n.use(reactI18nextModule)
+i18n.use(initReactI18next)
   .init({
     resources: {
       en: {
