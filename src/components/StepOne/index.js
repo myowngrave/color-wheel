@@ -28,7 +28,7 @@ class StepOne extends Component {
     const onColorsChanged = colors => this.setState({colors});
     return (
       <div className="App">
-        <ColorWheel thickness={40} numberOfThumbs={3} onColorsChanged={onColorsChanged}>
+        <ColorWheel thickness={30} numberOfThumbs={3} onColorsChanged={onColorsChanged}>
           {this.renderEars}
         </ColorWheel>
       </div>

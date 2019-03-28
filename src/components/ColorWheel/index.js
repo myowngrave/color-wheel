@@ -1,22 +1,24 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {withProps} from 'recompose';
-import {isMobile} from 'react-device-detect';
-import styles from './styles.module.scss';
-import {polar2xy} from "../../helpers";
+import { withProps } from "recompose";
+import { isMobile } from "react-device-detect";
+import styles from "./styles.module.scss";
+import { polar2xy } from "../../helpers";
 
 //region Helpers
-const EventListenerMode = {capture: true};
+const EventListenerMode = { capture: true };
 const calculateCanvasSize = () => {
     const ratio = window.devicePixelRatio || 1,
       width = window.screen.width * ratio;
-    return isMobile ? {
-      ratio,
-      size: width - 40
-    } : {
-      ratio,
-      size: width * 0.3
-    };
+    return isMobile
+      ? {
+          ratio,
+          size: width - 40
+        }
+      : {
+          ratio,
+          size: parseInt(width * 0.3)
+        };
   },
   xy2polar = (x, y) => {
     let r = Math.sqrt(x * x + y * y);
@@ -30,17 +32,17 @@ const calculateCanvasSize = () => {
     let x = chroma * (1 - Math.abs((hue1 % 2) - 1));
     let r1, g1, b1;
     if (hue1 >= 0 && hue1 <= 1) {
-      ([r1, g1, b1] = [chroma, x, 0]);
+      [r1, g1, b1] = [chroma, x, 0];
     } else if (hue1 >= 1 && hue1 <= 2) {
-      ([r1, g1, b1] = [x, chroma, 0]);
+      [r1, g1, b1] = [x, chroma, 0];
     } else if (hue1 >= 2 && hue1 <= 3) {
-      ([r1, g1, b1] = [0, chroma, x]);
+      [r1, g1, b1] = [0, chroma, x];
     } else if (hue1 >= 3 && hue1 <= 4) {
-      ([r1, g1, b1] = [0, x, chroma]);
+      [r1, g1, b1] = [0, x, chroma];
     } else if (hue1 >= 4 && hue1 <= 5) {
-      ([r1, g1, b1] = [x, 0, chroma]);
+      [r1, g1, b1] = [x, 0, chroma];
     } else if (hue1 >= 5 && hue1 <= 6) {
-      ([r1, g1, b1] = [chroma, 0, x]);
+      [r1, g1, b1] = [chroma, 0, x];
     }
 
     let m = lightness - chroma;
@@ -57,7 +59,7 @@ const calculateCanvasSize = () => {
 
 @withProps(() => {
   return {
-    ...(calculateCanvasSize())
+    ...calculateCanvasSize()
   };
 })
 class ColorWheel extends Component {
@@ -68,20 +70,18 @@ class ColorWheel extends Component {
     numberOfThumbs: PropTypes.number,
     isConstraint: PropTypes.bool,
     children: PropTypes.func,
-    onColorsChanged: PropTypes.func,
+    onColorsChanged: PropTypes.func
   };
   static defaultProps = {
     thickness: 0,
     numberOfThumbs: 1,
     isConstraint: true,
-    children: () => {
-    },
-    onColorsChanged: () => {
-    }
+    children: () => {},
+    onColorsChanged: () => {}
   };
   state = {
     initialized: false,
-    canvasCenter: {x: 0, y: 0},
+    canvasCenter: { x: 0, y: 0 },
     thumbPosition: [],
     thumbColors: []
   };
@@ -94,21 +94,25 @@ class ColorWheel extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('mousemove', this.onMouseMove, EventListenerMode);
+    document.addEventListener("mousemove", this.onMouseMove, EventListenerMode);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousemove', this.onMouseMove, EventListenerMode);
+    document.removeEventListener(
+      "mousemove",
+      this.onMouseMove,
+      EventListenerMode
+    );
   }
 
-  onMouseMove({clientX, clientY}) {
+  onMouseMove({ clientX, clientY }) {
     if (!this.state.initialized) return;
 
     // calculate exactly thumbs coordinates
     // mouseRadius is just a distance from mousepoint to wheel center
-    let {size, numberOfThumbs, isConstraint, onColorsChanged} = this.props,
-      {canvasCenter} = this.state,
-      radius = size * 1.0 / 2;
+    let { size, numberOfThumbs, isConstraint, onColorsChanged } = this.props,
+      { canvasCenter } = this.state,
+      radius = (size * 1.0) / 2;
     let vectorX = clientX - canvasCenter.x,
       vectorY = clientY - canvasCenter.y,
       [mouseRadius, phi] = xy2polar(vectorX, vectorY),
@@ -116,11 +120,10 @@ class ColorWheel extends Component {
       //     thumbPosition = polar2xy(radius, phi);
       // thumbPosition.x += radius;
       // thumbPosition.y += radius;
-      increment = 2 * Math.PI / numberOfThumbs;
+      increment = (2 * Math.PI) / numberOfThumbs;
 
     let computedRadius = radius;
-    if (!isConstraint && mouseRadius < radius)
-      computedRadius = mouseRadius;
+    if (!isConstraint && mouseRadius < radius) computedRadius = mouseRadius;
     computedRadius--;
 
     for (let i = 0; i < numberOfThumbs; i++) {
@@ -140,29 +143,32 @@ class ColorWheel extends Component {
         const [x, y] = [thumb.x, thumb.y].map(Math.round),
           [r, g, b] = [0, 1, 2].map(i => data[(x + y * size) * 4 + i]);
 
-        return {r, g, b, hex: rgbToHex(r, g, b)};
+        return { r, g, b, hex: rgbToHex(r, g, b) };
       });
 
-    this.setState({
-      thumbPosition,
-      thumbColors: thumbnailColors
-    }, () => onColorsChanged(thumbnailColors));
+    this.setState(
+      {
+        thumbPosition,
+        thumbColors: thumbnailColors
+      },
+      () => onColorsChanged(thumbnailColors)
+    );
   }
 
   initCanvas = canvas => {
     this.ctx = canvas.getContext("2d");
     // calculate canvas center fixed position
-    const {size} = this.props,
+    const { size } = this.props,
       bcr = canvas.getBoundingClientRect(),
       canvasCenter = {
         x: bcr.left + size / 2,
         y: bcr.top + size / 2
       };
-    this.setState({canvasCenter, initialized: true}, () => this.draw());
+    this.setState({ canvasCenter, initialized: true }, () => this.draw());
   };
   draw = () => {
-    let {size, thickness} = this.props,
-      pixelPadding = 3,
+    let { size, thickness } = this.props;
+    let pixelPadding = 3,
       radius = size / 2,
       ctx = this.ctx,
       imageData = ctx.createImageData(size, size),
@@ -171,12 +177,12 @@ class ColorWheel extends Component {
       for (let y = -radius; y < radius; y++) {
         let [r, phi] = xy2polar(x, y);
         if (r > radius) continue;
-        if (thickness > 0 && r < (radius - thickness - pixelPadding)) continue;
+        if (thickness > 0 && r < radius - thickness - pixelPadding) continue;
         let deg = rad2deg(phi),
           adjustedX = x + radius,
           adjustedY = y + radius,
           pixelWidth = 4,
-          index = (adjustedX + (adjustedY * size)) * pixelWidth;
+          index = (adjustedX + adjustedY * size) * pixelWidth;
         let hue = deg,
           sat = r / radius,
           // lightness = r / (2 * radius) + 1 / 2,
@@ -205,22 +211,24 @@ class ColorWheel extends Component {
 
   render() {
     const size = this.props.size,
-      {thumbPosition, thumbColors} = this.state,
+      { thumbPosition, thumbColors } = this.state,
       renderThumb = thumbPos => {
         const thumbStyle = {
-          top: thumbPos.y + 'px',
-          left: thumbPos.x + 'px'
+          top: thumbPos.y + "px",
+          left: thumbPos.x + "px"
         };
-        return <div className={styles.thumb} style={thumbStyle}/>;
+        return <div className={styles.thumb} style={thumbStyle} />;
       };
-    return <div className={styles.container}>
-      <canvas ref={this.initCanvas} width={size} height={size}/>
-      {this.state.initialized && thumbPosition.map(renderThumb)}
-      {this.props.children({
-        thumbPosition,
-        thumbColors
-      })}
-    </div>;
+    return (
+      <div className={styles.container}>
+        <canvas ref={this.initCanvas} width={size} height={size} />
+        {this.state.initialized && thumbPosition.map(renderThumb)}
+        {this.props.children({
+          thumbPosition,
+          thumbColors
+        })}
+      </div>
+    );
   }
 }
 
